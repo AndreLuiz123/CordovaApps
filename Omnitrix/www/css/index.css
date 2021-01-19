@@ -1,0 +1,185 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(to top, #292929 50%, #01ff01 100%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    text-transform:uppercase;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+
+
+#omnitrix{
+
+    display: block;
+    border: #000000 solid 3px;
+    background-color: #292929;
+    position:absolute;           
+    
+
+    /*CENTRALIZA OMNITRIX*/
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+
+    /*DESENHA OMNITRIX*/
+    height:224px;                  
+    width:224px;  
+    /*left:50%;
+    top:50%;                
+    text-align:center;
+    margin:-115px 0px 0px -112px; */
+  
+}
+
+
+.detalhes1{
+
+    border: #000000 solid 10px;
+    position:absolute;
+
+
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.detalhes2{
+    border: #000000 solid 5px;
+    background-color: #ffffff;
+
+    width: 25px;
+    height: 50px;
+
+}
+
+#detalhes21{ 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: rotate(-45deg); 
+}
+
+#detalhes22{ 
+    position: absolute;
+    bottom: 0px;
+    left: 0px; 
+    transform: rotate(45deg);
+}
+
+#detalhes23{ 
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
+    transform: rotate(-45deg);
+}
+
+#detalhes24{ 
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    transform: rotate(45deg);
+}
+
+.bola{
+    border: #000000 solid 5px;
+    background-color: #92da20;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation-name: animacao;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#bola1{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: -20px;
+    margin: auto;
+}
+
+#bola2{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -20px;
+    margin: auto;
+}
+
+#bola3{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: -20px;
+    margin: auto;
+}
+
+#bola4{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: -20px;
+    margin: auto;
+}
+
+
+.heroi{
+
+    border: #ffffff solid 10px;
+    position:absolute;             /* position in the center of the screen */
+    background-image: url(../img/OmnitrixSymbol.png);
+    background-size:100% 100%;
+
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+
+    border-radius: 50%;
+
+}
+
+@keyframes animacao {
+    0%   {background-color: #92da20;}
+    50%  {background-color: #4d7211;}
+    100%  {background-color: #92da20;}
+  }
